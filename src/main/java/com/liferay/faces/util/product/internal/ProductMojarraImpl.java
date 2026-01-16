@@ -36,7 +36,7 @@ public class ProductMojarraImpl extends ProductBase {
 		if ((productInfo == null) || !productInfo.detected || productInfo.majorVersion == 0) {
 			productInfo = ProductInfo
 				.newInstance(title, "com.sun.faces.RIConstants",
-					"META-INF/maven/org.glassfish/javax.faces/pom.properties");
+					"META-INF/maven/org.glassfish/jakarta.faces/pom.properties");
 		}
 
 		// If running on WebLogic 12c (12.1.x), then the version typically looks like "1.0.0.0_2-1-20" or

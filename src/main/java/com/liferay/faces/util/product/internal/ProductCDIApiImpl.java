@@ -22,8 +22,8 @@ public class ProductCDIApiImpl extends ProductBase {
 
 	public ProductCDIApiImpl() {
 		super(ProductInfo
-			.newInstance("CDI API", "javax.enterprise.context.SessionScoped",
+			.newInstance("CDI API", "jakarta.enterprise.context.SessionScoped",
 				new String[] { "META-INF/maven/com.liferay/jakarta.enterprise.cdi/pom.properties",
-					"META-INF/maven/javax.enterprise/cdi-api/pom.properties" }));
+					"META-INF/maven/jakarta.enterprise/cdi-api/pom.properties" }));
 	}
 }
