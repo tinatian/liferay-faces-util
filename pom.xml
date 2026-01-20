@@ -271,13 +271,6 @@
 									filter:="(&(osgi.extender=osgi.serviceloader.registrar)(version>=1.0.0)(!(version>=2.0.0)))",\
 								osgi.implementation;\
 									filter:="(&(osgi.implementation=osgi.cdi)(version>=1.0.0)(!(version>=2.0.0)))"
-							# Allow Util to provide SPI implementations to Mojarra.
-							Provide-Capability: \
-								osgi.serviceloader;osgi.serviceloader=jakarta.enterprise.inject.spi.Extension;\
-									osgi.cdi.extension="liferay.jsf";\
-									register:="com.liferay.faces.util.osgi.FacesCDIThinWabExtension";\
-									uses:="com.sun.faces,jakarta.enterprise.event,jakarta.enterprise.inject.spi,jakarta.inject,jakarta.servlet",\
-								osgi.cdi.extension;osgi.cdi.extension="liferay.jsf";version:Version="1.0.0"
 						]]>
 					</bnd>
 				</configuration>
