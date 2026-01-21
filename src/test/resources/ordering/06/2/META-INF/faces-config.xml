@@ -122,14 +122,6 @@
 	</render-kit>
 	<render-kit>
 		<renderer>
-			<description>HtmlInputFile Renderer</description>
-			<component-family>jakarta.faces.Input</component-family>
-			<renderer-type>jakarta.faces.File</renderer-type>
-			<renderer-class>com.liferay.faces.bridge.component.inputfile.internal.HtmlInputFileRenderer</renderer-class>
-		</renderer>
-	</render-kit>
-	<render-kit>
-		<renderer>
 			<description>Default renderer for portlet:renderURL tag</description>
 			<component-family>jakarta.faces.Output</component-family>
 			<renderer-type>com.liferay.faces.bridge.renderkit.portlet.RenderURLRenderer</renderer-type>
