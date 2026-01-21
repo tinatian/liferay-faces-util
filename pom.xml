@@ -271,6 +271,13 @@
 									filter:="(&(osgi.extender=osgi.serviceloader.registrar)(version>=1.0.0)(!(version>=2.0.0)))",\
 								osgi.implementation;\
 									filter:="(&(osgi.implementation=osgi.cdi)(version>=1.0.0)(!(version>=2.0.0)))"
+							Provide-Capability: \
+								osgi.serviceloader;osgi.serviceloader=com.sun.faces.spi.AnnotationProvider;\
+									uses:="com.sun.faces.spi",\
+								osgi.serviceloader;osgi.serviceloader=com.sun.faces.spi.FaceletConfigResourceProvider;\
+									uses:="com.sun.faces.spi",\
+								osgi.serviceloader;osgi.serviceloader=com.sun.faces.spi.FacesConfigResourceProvider;\
+									uses:="com.sun.faces.spi"
 						]]>
 					</bnd>
 				</configuration>
