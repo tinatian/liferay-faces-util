@@ -248,7 +248,7 @@
 							Import-Package: \
 								!com.liferay.faces.util,\
 								!com.liferay.faces.util.*,\
-								com.sun.faces.util;version="[3.0.0,4.0.0)",\
+								com.sun.faces.util;version="[2.0.0,4.0.0)",\
 								jakarta.el;version="[5.0.0,6.0.0)",\
 								org.apache.log4j;version="[1.2,2)";resolution:=optional,\
 								org.apache.logging.log4j;version="[2.17,3)",\
